@@ -16,6 +16,7 @@ const Intro = () => {
         </a>{' '}
         and {CMS_NAME}.
       </h4>
+      <p>Intention is to turn this into a new website for Jack Army Scandinavia.</p>
     </section>
   )
 }
