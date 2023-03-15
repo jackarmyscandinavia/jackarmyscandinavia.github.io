@@ -1,3 +1,5 @@
+import style from 'styles/components/avatar.module.scss';
+
 type Props = {
   name: string
   picture: string
@@ -5,9 +7,9 @@ type Props = {
 
 const Avatar = ({ name, picture }: Props) => {
   return (
-    <div className="flex items-center">
-      <img src={picture} className="w-12 h-12 rounded-full mr-4" alt={name} />
-      <div className="text-xl font-bold">{name}</div>
+    <div className={style.avatar}>
+      <img src={picture} className={style.image} alt={name} />
+      <div className={style.name}>{name}</div>
     </div>
   )
 }

@@ -1,16 +1,16 @@
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
-import Container from '../../components/container'
-import PostBody from '../../components/post-body'
-import Header from '../../components/header'
-import PostHeader from '../../components/post-header'
-import Layout from '../../components/layout'
-import { getPostBySlug, getAllPosts } from '../../lib/api'
-import PostTitle from '../../components/post-title'
+import Container from 'components/container'
+import PostBody from 'components/post-body'
+import Header from 'components/header'
+import PostHeader from 'components/post-header'
+import Layout from 'components/layout'
+import { getPostBySlug, getAllPosts } from 'lib/api'
+import PostTitle from 'components/post-title'
 import Head from 'next/head'
-import { CMS_NAME } from '../../lib/constants'
-import markdownToHtml from '../../lib/markdownToHtml'
-import type PostType from '../../interfaces/post'
+import { CMS_NAME } from 'lib/constants'
+import markdownToHtml from 'lib/markdownToHtml'
+import type PostType from 'interfaces/post'
 
 type Props = {
   post: PostType
@@ -32,7 +32,7 @@ export default function Post({ post, morePosts, preview }: Props) {
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article className="mb-32">
+            <article>
               <Head>
                 <title>{title}</title>
                 <meta property="og:image" content={post.ogImage.url} />

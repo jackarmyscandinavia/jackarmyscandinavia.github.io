@@ -1,0 +1,18 @@
+.avatar {
+  display: flex;
+  align-items: center;
+
+  .image {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+    margin-right: 1rem;
+  }
+
+  .name {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+  }
+
+}
