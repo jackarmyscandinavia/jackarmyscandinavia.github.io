@@ -1,14 +1,31 @@
-import Link from 'next/link'
+import Image from 'next/image';
+import Link from 'next/link';
+import cn from 'classnames';
 
-const Header = () => {
+import webheader from 'static/Jack-Army-Scandinavia-Black.png';
+import style from 'styles/components/header.module.scss';
+
+type HeaderProps = {
+  className?: string;
+};
+
+const Header = ({ className }: HeaderProps) => {
   return (
-    <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8">
+    <header className={cn(className, style.header)}>
       <Link href="/" className="hover:underline">
-        Blog
+        <Image
+          className={style.logo}
+          src={webheader}
+          alt="Jack Army Scandinavia Logo"
+          height={160}
+        />
+        <h1 className={style.title}>Jack Army Scandinavia</h1>
+        <h2 className={style.subtitle}>
+          Official Swansea City Supporters Club
+        </h2>
       </Link>
-      .
-    </h2>
-  )
-}
+    </header>
+  );
+};
 
-export default Header
+export default Header;

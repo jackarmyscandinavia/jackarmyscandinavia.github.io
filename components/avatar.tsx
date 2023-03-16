@@ -1,17 +1,20 @@
 import style from 'styles/components/avatar.module.scss';
 
-type Props = {
-  name: string
-  picture: string
-}
+import cn from 'classnames';
 
-const Avatar = ({ name, picture }: Props) => {
+type Props = {
+  className?: string;
+  name: string;
+  picture: string;
+};
+
+const Avatar = ({ className, name, picture }: Props) => {
   return (
-    <div className={style.avatar}>
+    <div className={cn(className, style.avatar)}>
       <img src={picture} className={style.image} alt={name} />
       <div className={style.name}>{name}</div>
     </div>
-  )
-}
+  );
+};
 
-export default Avatar
+export default Avatar;
