@@ -1,0 +1,84 @@
+@use 'src/styles/abstracts/_constants' as constants;
+@use 'src/styles/abstracts/mixins' as mixins;
+
+.navigationWrapper {
+  @include mixins.content-wrapper-row;
+  background-color: black;
+  color: white;
+}
+
+.navigation {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  right: -20rem;
+  width: 20rem;
+  border-left: 1px solid #ccc;
+  overflow-y: auto;
+  transition: right 300ms;
+  background-color: #f8f8f8;
+  color: black;
+  padding: 2rem 4rem 0.5rem 1.5rem;
+
+  &.open {
+    right: 0;
+    box-shadow: 0.25rem 0 0.5rem black;
+  }
+
+  @media screen and (min-width: constants.$mobileMaxWidth) {
+    @include mixins.content-wrapper-content;
+    position: static;
+    height: initial;
+    top: initial;
+    right: initial;
+    border-left: none;
+    overflow-y: hidden;
+    background-color: transparent;
+    color: white;
+    padding: 0;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    font-size: 2rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 1rem;
+
+    .item a {
+      color: currentColor;
+      text-decoration-line: none;
+      width: 100%;
+
+      &:hover {
+        text-decoration-line: underline;
+      }
+    }
+
+    @media screen and (min-width: constants.$mobileMaxWidth) {
+      font-size: 1.25rem;
+      flex-direction: row;
+      gap: 2.5rem;
+
+      .item {
+        padding: 0.5rem 0;
+      }
+    }
+  }
+
+  .close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+
+    @media screen and (min-width: constants.$mobileMaxWidth) {
+      display: none;
+    }
+  }
+}

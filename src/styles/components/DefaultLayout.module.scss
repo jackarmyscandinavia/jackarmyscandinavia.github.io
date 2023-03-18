@@ -1,0 +1,38 @@
+@use 'src/styles/abstracts/_constants' as constants;
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+
+  .header {
+    flex: 0 0 auto;
+    align-self: stretch;
+  }
+
+  .nav {
+    flex: 0 0 auto;
+    align-self: stretch;
+  }
+
+  .main {
+    flex: 1 1 auto;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    max-width: constants.$maxWidth;
+
+    transition-property: padding;
+    transition-duration: 200ms;
+
+    @media screen and (min-width: constants.$maxWidth) {
+      padding: 1rem;
+    }
+  }
+
+  .footer {
+    flex: 0 0 auto;
+    margin-top: 1rem;
+    align-self: stretch;
+  }
+}

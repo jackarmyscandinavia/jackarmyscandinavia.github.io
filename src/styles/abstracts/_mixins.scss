@@ -1,0 +1,22 @@
+@use 'src/styles/abstracts/_constants' as constants;
+
+@mixin content-wrapper-row {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  @media screen and (min-width: constants.$maxWidth) {
+    grid-template-columns: 1fr constants.$maxWidth 1fr;
+  }
+}
+
+@mixin content-wrapper-content {
+  grid-column: 1;
+  @media screen and (min-width: constants.$maxWidth) {
+    grid-column: 2;
+  }
+}
+
+@mixin content-row {
+  margin: 0 auto;
+  max-width: constants.$maxWidth;
+}
