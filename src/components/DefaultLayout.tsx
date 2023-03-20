@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import Header from 'src/components/HeaderComponent';
+import Header from 'src/components/Header';
 import Footer from 'src/components/footer';
 import Meta from 'src/components/meta';
 import Navigation from 'src/components/Navigation';
