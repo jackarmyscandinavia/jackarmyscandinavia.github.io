@@ -1,34 +1,34 @@
 import Head from 'next/head';
 
-import MoreStories from 'src/components/MoreStories';
-import FeaturedPost from 'src/components/FeaturedPost';
 import Layout from 'src/components/DefaultLayout';
 import { getAllPosts } from 'src/lib/api';
 import Post from 'src/interfaces/post';
+import PostPreview from 'src/components/PostPreview';
+
+import style from 'src/styles/pages/index.module.scss';
 
 type Props = {
   allPosts: Post[];
 };
 
 export default function Index({ allPosts }: Props) {
-  const featured = allPosts[0];
-  const rest = allPosts.slice(1);
   return (
-    <Layout>
+    <Layout className={style.index}>
       <Head>
         <title>{`Jack Army Scandinavia`}</title>
       </Head>
-      {featured && (
-        <FeaturedPost
-          title={featured.title}
-          coverImage={featured.coverImage}
-          date={featured.date}
-          author={featured.author}
-          slug={featured.slug}
-          excerpt={featured.excerpt}
+      {allPosts.map((post) => (
+        <PostPreview
+          className={style.postPrev}
+          key={post.slug}
+          title={post.title}
+          coverImage={post.coverImage}
+          date={post.date}
+          author={post.author}
+          slug={post.slug}
+          excerpt={post.excerpt}
         />
-      )}
-      {rest.length > 0 && <MoreStories posts={rest} />}
+      ))}
     </Layout>
   );
 }

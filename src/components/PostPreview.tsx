@@ -1,11 +1,13 @@
 import Link from 'next/link';
+import cn from 'classnames';
 
-import Avatar from 'src/components/avatar';
-import CoverImage from 'src/components/CoverImage';
 import type Author from 'src/interfaces/author';
 import { formatDate } from 'src/lib/date';
 
+import style from 'src/styles/components/PostPreview.module.scss';
+
 type Props = {
+  className?: string;
   title: string;
   coverImage: string;
   date: string;
@@ -14,7 +16,8 @@ type Props = {
   slug: string;
 };
 
-const PostPreview = ({
+const  PostPreview = ({
+  className,
   title,
   coverImage,
   date,
@@ -23,19 +26,18 @@ const PostPreview = ({
   slug,
 }: Props) => {
   return (
-    <div>
-      <div>
-        <CoverImage slug={slug} title={title} src={coverImage} />
-      </div>
-      <h3>
+    <section className={cn(className, style.postPreview)}>
+      <Link className={style.imageLink} as={`/posts/${slug}`} href="/posts/[slug]" aria-label={title}>
+        <img className={style.image} title={title} src={coverImage} />
+      </Link>
+      <h3 className={style.title}>
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           {title}
         </Link>
       </h3>
-      <div>{formatDate(date)}</div>
-      <p>{excerpt}</p>
-      <Avatar name={author.name} picture={author.picture} />
-    </div>
+      <span className={style.meta}>{formatDate(date)}, {author.name}</span>
+      <p className={style.excerpt}>{excerpt}</p>
+    </section>
   );
 };
 

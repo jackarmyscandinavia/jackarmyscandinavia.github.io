@@ -2,8 +2,7 @@ import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 import Head from 'next/head';
 
-import PostBody from 'src/components/PostBody';
-import PostHeader from 'src/components/PostHeader';
+import Post from 'src/components/Post';
 import Layout from 'src/components/DefaultLayout';
 import { getPostBySlug, getAllPosts } from 'src/lib/api';
 import markdownToHtml from 'src/lib/markdownToHtml';
@@ -15,7 +14,7 @@ type Props = {
   preview?: boolean;
 };
 
-export default function Post({ post, morePosts, preview }: Props) {
+export default function PostPage({ post, morePosts, preview }: Props) {
   const router = useRouter();
 
   if (!router.isFallback && !post?.slug) {
@@ -29,21 +28,14 @@ export default function Post({ post, morePosts, preview }: Props) {
       {router.isFallback ? (
         <h1>Loading…</h1>
       ) : (
-        <>
-          <article>
-            <Head>
-              <title>{`${post.title} - Jack Army Scandinavia`}</title>
-              <meta property="og:image" content={post.ogImage.url} />
-            </Head>
-            <PostHeader
-              title={post.title}
-              coverImage={post.coverImage}
-              date={post.date}
-              author={post.author}
-            />
-            <PostBody content={post.content} />
-          </article>
-        </>
+        <Post
+          title={post.title}
+          coverImage={post.coverImage}
+          date={post.date}
+          author={post.author}
+          content={post.content}
+          ogImageUrl={post.ogImage.url}
+        />
       )}
     </Layout>
   );
