@@ -3,7 +3,7 @@ import ErrorPage from 'next/error';
 import Head from 'next/head';
 
 import PostBody from 'src/components/PostBody';
-import PostHeader from 'src/components/post-header';
+import PostHeader from 'src/components/PostHeader';
 import Layout from 'src/components/DefaultLayout';
 import { getPostBySlug, getAllPosts } from 'src/lib/api';
 import markdownToHtml from 'src/lib/markdownToHtml';

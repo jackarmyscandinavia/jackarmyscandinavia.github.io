@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import Avatar from 'src/components/avatar';
-import CoverImage from 'src/components/cover-image';
+import CoverImage from 'src/components/CoverImage';
 import type Author from 'src/interfaces/author';
 import { formatDate } from 'src/lib/date';
 

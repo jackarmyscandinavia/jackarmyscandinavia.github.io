@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import MoreStories from 'src/components/more-stories';
+import MoreStories from 'src/components/MoreStories';
 import FeaturedPost from 'src/components/FeaturedPost';
 import Layout from 'src/components/DefaultLayout';
 import { getAllPosts } from 'src/lib/api';
