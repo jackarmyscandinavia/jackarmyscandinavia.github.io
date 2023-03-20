@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import cn from 'classnames';
 
 import Header from 'src/components/Header';
 import Footer from 'src/components/footer';
@@ -9,13 +10,14 @@ import style from 'src/styles/components/DefaultLayout.module.scss';
 
 type Props = {
   children: React.ReactNode;
+  className?: string;
 };
 
-const Layout = ({ children }: Props) => {
+const Layout = ({ children, className }: Props) => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   return (
-    <section className={style.layout}>
+    <section className={cn(className, style.layout)}>
       <Meta />
       <Header
         className={style.header}
