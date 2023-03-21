@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 
 import Layout from 'src/components/DefaultLayout';
 import style from 'src/styles/pages/about.module.scss';
@@ -22,8 +23,10 @@ export default function AboutPage() {
         </p>
 
         <figure className={style.jackflagimg}>
-          <img
+          <Image
             src="/assets/images/jackarmy-300x300.jpg"
+            width={300}
+            height={300}
             alt={'Swansea City Supporters (Jacks) with a flag'}
           />
           <figcaption>

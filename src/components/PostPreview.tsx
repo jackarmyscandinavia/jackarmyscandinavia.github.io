@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import cn from 'classnames';
 
 import type Author from 'src/interfaces/author';
@@ -33,7 +34,7 @@ const PostPreview = ({
         href="/posts/[slug]"
         aria-label={title}
       >
-        <img className={style.image} title={title} src={coverImage} />
+        <Image className={style.image} title={title} src={coverImage} width={420} height={250} alt={title} />
       </Link>
       <h3 className={style.title}>
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
