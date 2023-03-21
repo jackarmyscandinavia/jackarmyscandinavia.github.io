@@ -34,7 +34,15 @@ const PostPreview = ({
         href="/posts/[slug]"
         aria-label={title}
       >
-        <Image className={style.image} title={title} src={coverImage} width={420} height={250} alt={title} />
+        <Image
+          className={style.image}
+          title={title}
+          src={coverImage}
+          width={420}
+          height={250}
+          alt={title}
+          sizes={'(min-width: 40rem) 300px, 100vw'}
+        />
       </Link>
       <h3 className={style.title}>
         <Link as={`/posts/${slug}`} href="/posts/[slug]">

@@ -37,7 +37,13 @@ const Post = ({
       <div className={style.meta}>
         {formatDate(date)}, {author.name}
       </div>
-      <Image className={style.image} title={title} src={coverImage} alt={title} />
+      <Image
+        className={style.image}
+        title={title}
+        src={coverImage}
+        alt={title}
+        sizes="100vw"
+      />
       <div
         className={cn(style.content, markdownStyles.markdown)}
         dangerouslySetInnerHTML={{ __html: content }}

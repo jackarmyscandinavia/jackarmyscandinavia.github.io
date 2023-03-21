@@ -22,6 +22,7 @@ export default function MembershipPage() {
           alt={'Jack Army Scandinavia Logo'}
           width={200}
           height={200}
+          sizes="200px"
         />
         <p>
           Som medlem i Jack Army Scandinavia vil du motta vårt nyhetsbrev, samt

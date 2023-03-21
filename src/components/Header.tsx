@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import cn from 'classnames';
 
-import logo from 'public/assets/images/Jack-Army-Scandinavia-Black.png';
+import logo from 'public/assets/images/Jack-Army-Scandinavia-Black-128x146.png';
 import style from 'src/styles/components/Header.module.scss';
 import MenuIcon from 'src/components/icons/MenuIcon';
 
@@ -26,6 +26,7 @@ const Header = ({ className, onMenuIconClick }: HeaderProps) => {
               src={logo}
               alt="Jack Army Scandinavia Logo"
               fill={true}
+              sizes={'(min-width: 40rem) 128px, 80px'}
             />
           </div>
           <h1 className={style.title}>Jack Army Scandinavia</h1>

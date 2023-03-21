@@ -28,6 +28,7 @@ export default function AboutPage() {
             width={300}
             height={300}
             alt={'Swansea City Supporters (Jacks) with a flag'}
+            sizes="300px"
           />
           <figcaption>
             Supporterne til Swansea City går under navnet Jack Army.
