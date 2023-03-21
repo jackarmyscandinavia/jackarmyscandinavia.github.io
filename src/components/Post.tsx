@@ -1,4 +1,3 @@
-
 import Head from 'next/head';
 import cn from 'classnames';
 
@@ -17,17 +16,24 @@ type PostProps = {
   ogImageUrl: string;
 };
 
-const Post = ({ title, coverImage, date, author, content, ogImageUrl }: PostProps) => {
+const Post = ({
+  title,
+  coverImage,
+  date,
+  author,
+  content,
+  ogImageUrl,
+}: PostProps) => {
   return (
     <article className={style.post}>
       <Head>
         <title>{`${title} - Jack Army Scandinavia`}</title>
         <meta property="og:image" content={ogImageUrl} />
       </Head>
-      <h2 className={style.title}>
-        {title}
-      </h2>
-      <div className={style.meta}>{formatDate(date)}, {author.name}</div>
+      <h2 className={style.title}>{title}</h2>
+      <div className={style.meta}>
+        {formatDate(date)}, {author.name}
+      </div>
       <img className={style.image} title={title} src={coverImage} />
       <div
         className={cn(style.content, markdownStyles.markdown)}

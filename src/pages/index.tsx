@@ -15,7 +15,7 @@ export default function Index({ allPosts }: Props) {
   return (
     <Layout className={style.index}>
       <Head>
-        <title>{`Jack Army Scandinavia`}</title>
+        <title>{`Jack Army Scandinavia | Swansea City Supporterklubb`}</title>
       </Head>
       {allPosts.map((post) => (
         <PostPreview
