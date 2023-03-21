@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 
 import Layout from 'src/components/DefaultLayout';
 import style from 'src/styles/pages/membership.module.scss';
@@ -15,11 +16,12 @@ export default function MembershipPage() {
       </Head>
       <article>
         <h2>Medlemskap</h2>
-        <img
+        <Image
           className={style.logo}
           src="/assets/images/Jack-Army-Scandinavia-Black.png"
           alt={'Jack Army Scandinavia Logo'}
           width={200}
+          height={200}
         />
         <p>
           Som medlem i Jack Army Scandinavia vil du motta vårt nyhetsbrev, samt

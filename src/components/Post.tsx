@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import cn from 'classnames';
 
 import type Author from 'src/interfaces/author';
@@ -36,7 +37,7 @@ const Post = ({
       <div className={style.meta}>
         {formatDate(date)}, {author.name}
       </div>
-      <img className={style.image} title={title} src={coverImage} />
+      <Image className={style.image} title={title} src={coverImage} alt={title} />
       <div
         className={cn(style.content, markdownStyles.markdown)}
         dangerouslySetInnerHTML={{ __html: content }}

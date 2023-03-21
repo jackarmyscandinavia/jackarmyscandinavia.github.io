@@ -1,10 +1,11 @@
 /**
  * @type {import('next').NextConfig}
  */
-const nextConfig = {
-  images: {
-    unoptimized: true,
-  },
-};
+
+import withExportImages from 'next-export-optimize-images';
+
+const nextConfig = withExportImages({
+  
+});
 
 export default nextConfig;
