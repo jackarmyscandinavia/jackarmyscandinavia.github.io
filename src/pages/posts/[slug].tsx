@@ -10,11 +10,9 @@ import type PostType from 'src/interfaces/post';
 
 type Props = {
   post: PostType;
-  morePosts: PostType[];
-  preview?: boolean;
 };
 
-export default function PostPage({ post, morePosts, preview }: Props) {
+export default function PostPage({ post }: Props) {
   const router = useRouter();
 
   if (!router.isFallback && !post?.slug) {
@@ -23,7 +21,7 @@ export default function PostPage({ post, morePosts, preview }: Props) {
   return (
     <Layout>
       <Head>
-        <title>{`Jack Army Scandinavia`}</title>
+        <title>{`Jack Army Scandinavia | Swansea City Supporterklubb`}</title>
       </Head>
       {router.isFallback ? (
         <h1>Loading…</h1>
@@ -35,6 +33,7 @@ export default function PostPage({ post, morePosts, preview }: Props) {
           author={post.author}
           content={post.content}
           ogImageUrl={post.ogImage.url}
+          embeddedYouTube={post.embeddedYouTube}
         />
       )}
     </Layout>
@@ -56,6 +55,7 @@ export async function getStaticProps({ params }: Params) {
     'content',
     'ogImage',
     'coverImage',
+    'embeddedYouTube',
   ]);
   const content = await markdownToHtml(post.content || '');
 

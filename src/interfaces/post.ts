@@ -5,6 +5,7 @@ type PostType = {
   title: string;
   date: string;
   coverImage: string;
+  embeddedYouTube?: string;
   author: Author;
   excerpt: string;
   ogImage: {
