@@ -42,7 +42,16 @@ const Post = ({
         dangerouslySetInnerHTML={{ __html: content }}
       />
       {embeddedYouTube && (
-        <iframe className={style.embedded} width="560" height="315" src="https://www.youtube.com/embed/11W17bc9xow" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> 
+        <iframe
+          className={style.embedded}
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/11W17bc9xow"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
       )}
     </article>
   );
