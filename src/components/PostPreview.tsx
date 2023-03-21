@@ -16,7 +16,7 @@ type Props = {
   slug: string;
 };
 
-const  PostPreview = ({
+const PostPreview = ({
   className,
   title,
   coverImage,
@@ -27,7 +27,12 @@ const  PostPreview = ({
 }: Props) => {
   return (
     <section className={cn(className, style.postPreview)}>
-      <Link className={style.imageLink} as={`/posts/${slug}`} href="/posts/[slug]" aria-label={title}>
+      <Link
+        className={style.imageLink}
+        as={`/posts/${slug}`}
+        href="/posts/[slug]"
+        aria-label={title}
+      >
         <img className={style.image} title={title} src={coverImage} />
       </Link>
       <h3 className={style.title}>
@@ -35,7 +40,9 @@ const  PostPreview = ({
           {title}
         </Link>
       </h3>
-      <span className={style.meta}>{formatDate(date)}, {author.name}</span>
+      <span className={style.meta}>
+        {formatDate(date)}, {author.name}
+      </span>
       <p className={style.excerpt}>{excerpt}</p>
     </section>
   );

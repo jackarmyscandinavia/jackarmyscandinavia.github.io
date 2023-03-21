@@ -4,20 +4,6 @@ import cn from 'classnames';
 import style from 'src/styles/components/Navigation.module.scss';
 import CloseIcon from 'src/components/icons/CloseIcon';
 
-type NavigationMenuListProps = {
-  className?: string;
-};
-
-const NavigationMenuList = ({ className }: NavigationMenuListProps) => {
-  return (
-    <ul className={cn(style.menu, className)}>
-      <li className={style.item}>
-        <Link href="/">{'Hjem'}</Link>
-      </li>
-    </ul>
-  );
-};
-
 type NavigationProps = {
   className?: string;
   isOpen: boolean;
@@ -34,6 +20,9 @@ export const Navigation = ({ className, isOpen, onClose }: NavigationProps) => {
           </li>
           <li className={style.item}>
             <Link href="/about">{'Om oss'}</Link>
+          </li>
+          <li className={style.item}>
+            <Link href="/membership">{'Medlemskap'}</Link>
           </li>
         </ul>
         <CloseIcon

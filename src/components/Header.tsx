@@ -12,9 +12,8 @@ type HeaderProps = {
 };
 
 const Header = ({ className, onMenuIconClick }: HeaderProps) => {
-
   const onJoinClick = () => {
-    window.open("http://eepurl.com/imVFDo", "_blank")
+    window.open('http://eepurl.com/imVFDo', '_blank');
   };
 
   return (
@@ -34,7 +33,9 @@ const Header = ({ className, onMenuIconClick }: HeaderProps) => {
             Official Swansea City Supporters Club
           </h2>
         </Link>
-        <button className={style.joinButton} onClick={onJoinClick}>Bli medlem!</button>
+        <button className={style.joinButton} onClick={onJoinClick}>
+          Bli medlem!
+        </button>
         <MenuIcon className={style.menuIcon} onClick={onMenuIconClick} />
       </div>
     </header>

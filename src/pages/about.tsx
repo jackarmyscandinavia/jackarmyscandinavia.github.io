@@ -1,14 +1,15 @@
 import Head from 'next/head';
 
 import Layout from 'src/components/DefaultLayout';
+import style from 'src/styles/pages/about.module.scss';
 
 export default function AboutPage() {
   return (
     <Layout>
       <Head>
-        <title>{`Om oss - Jack Army Scandinavia`}</title>
+        <title>{`Jack Army Scandinavia | Om Oss`}</title>
       </Head>
-      <article>
+      <article className={style.about}>
         <h2>Om Jack Army Scandinavia</h2>
         <p>
           Jack Army Scandinavia er en norsk/svensk/dansk supporterklubb for
@@ -20,8 +21,15 @@ export default function AboutPage() {
           AFC i 2019.
         </p>
 
-        {/* Jack Army with flag
-Supporterne til Swansea City går under navnet Jack Army. */}
+        <figure className={style.jackflagimg}>
+          <img
+            src="/assets/images/jackarmy-300x300.jpg"
+            alt={'Swansea City Supporters (Jacks) with a flag'}
+          />
+          <figcaption>
+            Supporterne til Swansea City går under navnet Jack Army.
+          </figcaption>
+        </figure>
 
         <p>
           Navnet Jack Army er en fellesbetegnelse på alle Swanseas supportere.
