@@ -37,12 +37,12 @@ const Post = ({
       <div className={style.meta}>
         {formatDate(date)}, {author.name}
       </div>
-      <Image
+      <img
         className={style.image}
         title={title}
         src={coverImage}
         alt={title}
-        sizes="100vw"
+        sizes="(min-width: 64rem) 64rem, 100vw"
       />
       <div
         className={cn(style.content, markdownStyles.markdown)}

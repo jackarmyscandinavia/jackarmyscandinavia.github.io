@@ -38,10 +38,10 @@ const PostPreview = ({
           className={style.image}
           title={title}
           src={coverImage}
-          width={420}
-          height={250}
+          width={360}
+          height={270}
           alt={title}
-          sizes={'(min-width: 40rem) 300px, 100vw'}
+          sizes={'(min-width: 40rem) 25rem, 100vw'}
         />
       </Link>
       <h3 className={style.title}>

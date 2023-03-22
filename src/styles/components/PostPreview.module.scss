@@ -13,7 +13,7 @@
       'image meta'
       'image excerpt';
     grid-template-rows: min-content min-content 1fr;
-    grid-template-columns: 3fr 4fr;
+    grid-template-columns: 22rem 1fr;
     column-gap: 1rem;
   }
 
@@ -39,7 +39,6 @@
 
   .image {
     width: 100%;
-    max-height: 30rem;
     object-fit: cover;
   }
 
