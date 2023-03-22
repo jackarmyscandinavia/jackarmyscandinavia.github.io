@@ -42,7 +42,7 @@ const Post = ({
         title={title}
         src={coverImage}
         alt={title}
-        sizes="(min-width: 64rem) 64rem, 100vw"
+        sizes="(max-width: 40rem) 40rem, 64rem"
       />
       <div
         className={cn(style.content, markdownStyles.markdown)}

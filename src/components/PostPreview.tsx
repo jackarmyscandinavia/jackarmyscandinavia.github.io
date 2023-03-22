@@ -41,7 +41,7 @@ const PostPreview = ({
           width={360}
           height={270}
           alt={title}
-          sizes={'(min-width: 40rem) 25rem, 100vw'}
+          sizes={'(min-width: 40rem) 22rem, 40rem'}
         />
       </Link>
       <h3 className={style.title}>
