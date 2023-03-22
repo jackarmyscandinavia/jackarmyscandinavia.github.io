@@ -1,13 +1,13 @@
 ---
 title: 'Salg i nettbutikken!'
 excerpt: 'Swansea City har nå 40% rabatt på en hel masse varer i nettbutikken. Dette inkluderer sesongens drakter, treningsutstyr og en rekke andre ting.'
-coverImage: '/assets/images/2023-03-21-sale-swans-store.jpg'
+coverImage: '/images/2023-03-21-sale-swans-store.jpg'
 date: '2023-03-20'
 author:
   name: Eirik Reksten
-  picture: '/assets/blog/authors/eirik_reksten.jpg'
+  picture: '/images/authors/eirik_reksten.jpg'
 ogImage:
-  url: '/assets/images/2023-03-21-sale-swans-store.jpg'
+  url: '/images/2023-03-21-sale-swans-store.jpg'
 ---
 
 Swansea City har nå 40% rabatt på en hel masse varer i nettbutikken. Dette inkluderer sesongens drakter, treningsutstyr og en rekke andre ting.

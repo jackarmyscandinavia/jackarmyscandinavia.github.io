@@ -1,13 +1,13 @@
 ---
 title: 'Official International Supporters Group'
 excerpt: 'Visste du at Jack Army Scandinavia er anerkjent av Swansea City som offisiell supporterklubb? Det er vi. I 2019 ble vi tatt opp som en av Swanseas internasjonale supporterklubber og har egen seksjon på Swanseas egne hjemmesider. Så hva betyr det for oss?'
-coverImage: '/assets/images/Supporter-Flags-Jack-Army-Scandinavia.jpg'
+coverImage: '/images/Supporter-Flags-Jack-Army-Scandinavia.jpg'
 date: '2023-03-01'
 author:
   name: Eirik Reksten
-  picture: '/assets/blog/authors/eirik_reksten.jpg'
+  picture: '/images/authors/eirik_reksten.jpg'
 ogImage:
-  url: '/assets/images/Supporter-Flags-Jack-Army-Scandinavia.jpg'
+  url: '/images/Supporter-Flags-Jack-Army-Scandinavia.jpg'
 ---
 
 Visste du at Jack Army Scandinavia er anerkjent av Swansea City som offisiell supporterklubb? Det er vi. I 2019 ble vi tatt opp som en av Swanseas internasjonale supporterklubber og har egen seksjon på Swanseas egne hjemmesider. Så hva betyr det for oss?

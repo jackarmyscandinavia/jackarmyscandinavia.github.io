@@ -18,7 +18,7 @@ export default function MembershipPage() {
         <h2>Medlemskap</h2>
         <Image
           className={style.logo}
-          src="/assets/images/Jack-Army-Scandinavia-Black.png"
+          src="/images/Jack-Army-Scandinavia-Black.png"
           alt={'Jack Army Scandinavia Logo'}
           width={200}
           height={200}

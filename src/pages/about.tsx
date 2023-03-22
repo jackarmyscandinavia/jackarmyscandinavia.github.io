@@ -24,7 +24,7 @@ export default function AboutPage() {
 
         <figure className={style.jackflagimg}>
           <Image
-            src="/assets/images/jackarmy-300x300.jpg"
+            src="/images/jackarmy-300x300.jpg"
             width={300}
             height={300}
             alt={'Swansea City Supporters (Jacks) with a flag'}

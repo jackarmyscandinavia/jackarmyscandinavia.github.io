@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import cn from 'classnames';
 
-import logo from 'public/assets/images/Jack-Army-Scandinavia-Black-128x146.png';
+import logo from 'public/images/Jack-Army-Scandinavia-Black-128x146.png';
 import style from 'src/styles/components/Header.module.scss';
 import MenuIcon from 'src/components/icons/MenuIcon';
 
