@@ -1,3 +1,4 @@
+import React from 'react';
 import cn from 'classnames';
 
 import style from 'src/styles/components/footer.module.scss';
