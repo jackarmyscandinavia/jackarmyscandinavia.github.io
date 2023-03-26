@@ -5,7 +5,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next export && next-export-optimize-images",
-    "typecheck": "tsc"
+    "validate": "eslint src/ && tsc"
   },
   "dependencies": {
     "classnames": "^2.3.1",
@@ -18,7 +18,11 @@
     "@types/node": "^18.0.3",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
     "autoprefixer": "^10.4.7",
+    "eslint": "^8.36.0",
+    "eslint-plugin-react": "^7.32.2",
     "gray-matter": "^4.0.3",
     "next-export-optimize-images": "^2.0.0",
     "postcss": "^8.4.14",

@@ -1,5 +1,5 @@
+import React from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
 import cn from 'classnames';
 
 import type Author from 'src/interfaces/author';
@@ -55,7 +55,6 @@ const Post = ({
           height="315"
           src="https://www.youtube.com/embed/11W17bc9xow"
           title="YouTube video player"
-          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></iframe>

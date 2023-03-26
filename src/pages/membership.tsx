@@ -1,3 +1,4 @@
+import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 
@@ -27,12 +28,12 @@ export default function MembershipPage() {
         <p>
           Som medlem i Jack Army Scandinavia vil du motta vårt nyhetsbrev, samt
           få tilgang til alle de fordelene vi har gjennom{' '}
-          <a href="http://www.supporterunionen.no/" target="_blank">
+          <a href="http://www.supporterunionen.no/" rel="noreferrer" target="_blank">
             Supporterunionen for Britisk Fotball
           </a>{' '}
           og{' '}
           <a
-            href="https://www.swanseacity.com/fans/official-supporters-groups"
+            href="https://www.swanseacity.com/fans/official-supporters-groups" rel="noreferrer"
             target="_blank"
           >
             Swansea City AFC
