@@ -36,7 +36,6 @@ const Meta = () => {
         name="description"
         content={`Home page of Jack Army Scandinavia, an official Swansea City Supporters Club.`}
       />
-      {/* <meta property="og:image" content={HOME_OG_IMAGE_URL} /> */}
     </Head>
   );
 };

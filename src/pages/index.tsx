@@ -17,6 +17,10 @@ export default function Index({ allPosts }: Props) {
     <Layout className={style.index}>
       <Head>
         <title>{`Jack Army Scandinavia | Swansea City Supporterklubb`}</title>
+        <meta property="og:image" content={'/images/Supporter-Flags-Jack-Army-Scandinavia.jpg'} />
+        <meta property="og:title" content={'Jack Army Scandinavia | Swansea City Supporterklubb'} />
+        <meta property="og:description" content={'Offisiell skandinavisk supporterklubb for Swansea City AFC'} />
+        <meta property="og:type" content={'website'} />
       </Head>
       {allPosts.map((post) => (
         <PostPreview
