@@ -43,14 +43,22 @@ export default function AboutPage() {
           teorier som står foran andre. Den kanskje mest sannsynlige er at
           Swanseas sjømenn tidlig på 1800-tallet ble referert til som Swansea
           Jacks. Dette grunnet deres «
-          <a href="http://en.wikipedia.org/wiki/Jack_Tar" rel="noreferrer" target="_blank">
+          <a
+            href="http://en.wikipedia.org/wiki/Jack_Tar"
+            rel="noreferrer"
+            target="_blank"
+          >
             Jack Tarred
           </a>
           » bekledning. Swansea Jacks var høyt respektert og kjent for hardt
           arbeid og gode ferdigheter på sjøen. Et annet, mer populært men
           kanskje mindre sannsynlig, opphav er en hund som levde under
           depresjonen i England på 1930-tallet. Hunden, som gikk under navnet «
-          <a href="http://en.wikipedia.org/wiki/Swansea_Jack" rel="noreferrer" target="_blank">
+          <a
+            href="http://en.wikipedia.org/wiki/Swansea_Jack"
+            rel="noreferrer"
+            target="_blank"
+          >
             Swansea Jack
           </a>
           «, skal visstnok ha reddet 27 mennesker opp av havet i havneområdene i
@@ -76,7 +84,11 @@ export default function AboutPage() {
 
         <p>
           Jack Army Scandinavia er med i{' '}
-          <a href="http://supporterunionen.com/" rel="noreferrer" target="_blank">
+          <a
+            href="http://supporterunionen.com/"
+            rel="noreferrer"
+            target="_blank"
+          >
             Supporterunionen for Britisk Fotball
           </a>
           . Gjennom dem får vi diverse tilbud, eksponering i media og ikke minst

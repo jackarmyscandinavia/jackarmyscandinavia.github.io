@@ -1,0 +1,14 @@
+{
+  "name": "Jack Army Scandinavia",
+  "shortDescription": "Swansea City Supporterklubb",
+  "description": "Offisiell skandinavisk supporterklubb for Swansea City AFC",
+  "address": {
+    "first": "Bjørnsons gate 61",
+    "second": "",
+    "zip": "2003",
+    "city": "Lillestrøm",
+    "country": "Norway"
+  },
+  "email": "post@swanseacity.no",
+  "phone": "906 50 981"
+}

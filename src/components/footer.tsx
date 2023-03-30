@@ -1,6 +1,8 @@
 import React from 'react';
+import Link from 'next/link';
 import cn from 'classnames';
 
+import details from 'data/clubdetails.json';
 import style from 'src/styles/components/footer.module.scss';
 
 type FooterProps = {
@@ -12,7 +14,12 @@ const Footer: React.FunctionComponent<FooterProps> = ({
 }: FooterProps) => {
   return (
     <footer className={cn(className, style.footer)}>
-      {`${String.fromCodePoint(0x000a9)} 2023 Jack Army Scandinavia`}
+      <section className={style.address}>
+        {`${String.fromCodePoint(0x000a9)} 2023 ${details.name}`}
+      </section>
+      <section className={style.conditions}>
+        <Link href="/statutes">{'Vedtekter'}</Link>
+      </section>
     </footer>
   );
 };

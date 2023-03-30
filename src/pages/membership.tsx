@@ -10,10 +10,23 @@ const onJoinClick = () => {
 };
 
 export default function MembershipPage() {
+  const title = 'Jack Army Scandinavia | Medlemskap';
   return (
     <Layout className={style.membership}>
       <Head>
-        <title>{`Jack Army Scandinavia | Medlemskap`}</title>
+        <title>{title}</title>
+        <meta
+          property="og:image"
+          content={'/images/Supporter-Flags-Jack-Army-Scandinavia.jpg'}
+        />
+        <meta property="og:title" content={title} />
+        <meta
+          property="og:description"
+          content={
+            'Informasjon om medlemskap og innmelding i Jack Army Scandinavia, offisiell skandinavisk supporterklubb for Swansea City AFC'
+          }
+        />
+        <meta property="og:type" content={'website'} />
       </Head>
       <article>
         <h2>Medlemskap</h2>
@@ -28,12 +41,17 @@ export default function MembershipPage() {
         <p>
           Som medlem i Jack Army Scandinavia vil du motta vårt nyhetsbrev, samt
           få tilgang til alle de fordelene vi har gjennom{' '}
-          <a href="http://www.supporterunionen.no/" rel="noreferrer" target="_blank">
+          <a
+            href="http://www.supporterunionen.no/"
+            rel="noreferrer"
+            target="_blank"
+          >
             Supporterunionen for Britisk Fotball
           </a>{' '}
           og{' '}
           <a
-            href="https://www.swanseacity.com/fans/official-supporters-groups" rel="noreferrer"
+            href="https://www.swanseacity.com/fans/official-supporters-groups"
+            rel="noreferrer"
             target="_blank"
           >
             Swansea City AFC

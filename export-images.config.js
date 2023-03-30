@@ -7,8 +7,8 @@ const config = {
     ['png', 'webp'],
     ['jpeg', 'webp'],
     ['jpg', 'webp'],
-    ['avif', 'webp']
-  ]
-}
+    ['avif', 'webp'],
+  ],
+};
 
-module.exports = config
+module.exports = config;
