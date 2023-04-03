@@ -19,15 +19,8 @@ const Layout = ({ children, className }: Props) => {
   return (
     <section className={cn(className, style.layout)}>
       <Meta />
-      <Header
-        className={style.header}
-        onMenuIconClick={() => setMenuOpen(!isMenuOpen)}
-      />
-      <Navigation
-        className={style.nav}
-        isOpen={isMenuOpen}
-        onClose={() => setMenuOpen(false)}
-      />
+      <Header className={style.header} onMenuIconClick={() => setMenuOpen(!isMenuOpen)} />
+      <Navigation className={style.nav} isOpen={isMenuOpen} onClose={() => setMenuOpen(false)} />
       <main className={style.main}>{children}</main>
       <Footer className={style.footer} />
     </section>

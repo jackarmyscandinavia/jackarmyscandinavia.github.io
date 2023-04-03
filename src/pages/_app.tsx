@@ -13,10 +13,7 @@ const font = GoogleFont({ subsets: ['latin'] });
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div className={cn('fontwrapper', font.className)}>
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${ga.GA_MEASUREMENT_ID}`}
-        strategy="afterInteractive"
-      />
+      <Script src={`https://www.googletagmanager.com/gtag/js?id=${ga.GA_MEASUREMENT_ID}`} strategy="afterInteractive" />
       <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];

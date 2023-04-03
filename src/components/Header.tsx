@@ -33,9 +33,7 @@ const Header = ({ className, onMenuIconClick }: HeaderProps) => {
             />
           </div>
           <h1 className={style.title}>{`${clubdetails.name}`}</h1>
-          <h2 className={style.subtitle}>
-            Official Swansea City Supporters Club
-          </h2>
+          <h2 className={style.subtitle}>Official Swansea City Supporters Club</h2>
         </Link>
         <button className={style.joinButton} onClick={onJoinClick}>
           Bli medlem!

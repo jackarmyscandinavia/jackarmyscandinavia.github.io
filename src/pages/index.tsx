@@ -19,18 +19,9 @@ export default function Index({ allPosts }: Props) {
     <Layout className={style.index}>
       <Head>
         <title>{title}</title>
-        <meta
-          property="og:image"
-          content={'/images/Supporter-Flags-Jack-Army-Scandinavia.jpg'}
-        />
-        <meta
-          property="og:title"
-          content={title}
-        />
-        <meta
-          property="og:description"
-          content={details.description}
-        />
+        <meta property="og:image" content={'/images/Supporter-Flags-Jack-Army-Scandinavia.jpg'} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={details.description} />
         <meta property="og:type" content={'website'} />
       </Head>
       {allPosts.map((post) => (
@@ -50,14 +41,7 @@ export default function Index({ allPosts }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'author',
-    'coverImage',
-    'excerpt',
-  ]);
+  const allPosts = getAllPosts(['title', 'date', 'slug', 'author', 'coverImage', 'excerpt']);
 
   return {
     props: { allPosts },

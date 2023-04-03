@@ -18,23 +18,10 @@ type Props = {
   slug: string;
 };
 
-const PostPreview = ({
-  className,
-  title,
-  coverImage,
-  date,
-  excerpt,
-  author,
-  slug,
-}: Props) => {
+const PostPreview = ({ className, title, coverImage, date, excerpt, author, slug }: Props) => {
   return (
     <section className={cn(className, style.postPreview)}>
-      <Link
-        className={style.imageLink}
-        as={`/posts/${slug}`}
-        href="/posts/[slug]"
-        aria-label={title}
-      >
+      <Link className={style.imageLink} as={`/posts/${slug}`} href="/posts/[slug]" aria-label={title}>
         <Image
           className={style.image}
           title={title}

@@ -18,15 +18,7 @@ type PostProps = {
   ogImageUrl: string;
 };
 
-const Post = ({
-  title,
-  coverImage,
-  date,
-  author,
-  content,
-  ogImageUrl,
-  embeddedYouTube,
-}: PostProps) => {
+const Post = ({ title, coverImage, date, author, content, ogImageUrl, embeddedYouTube }: PostProps) => {
   return (
     <article className={style.post}>
       <Head>
@@ -37,17 +29,8 @@ const Post = ({
       <div className={style.meta}>
         {formatDate(date)}, {author.name}
       </div>
-      <img
-        className={style.image}
-        title={title}
-        src={coverImage}
-        alt={title}
-        sizes="(max-width: 40rem) 40rem, 64rem"
-      />
-      <div
-        className={cn(style.content, markdownStyles.markdown)}
-        dangerouslySetInnerHTML={{ __html: content }}
-      />
+      <img className={style.image} title={title} src={coverImage} alt={title} sizes="(max-width: 40rem) 40rem, 64rem" />
+      <div className={cn(style.content, markdownStyles.markdown)} dangerouslySetInnerHTML={{ __html: content }} />
       {embeddedYouTube && (
         <iframe
           className={style.embedded}
