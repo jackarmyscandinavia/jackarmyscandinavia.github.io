@@ -2,7 +2,7 @@
 title: 'Samtaler om investering'
 excerpt: 'BBC rapporterer at Swansea er i samtaler om investering fra en ny potensiell medeier. Dette etter at vi har gått i underskudd de siste sesongene.'
 coverImage: '/images/swansea-com-stadium.jpg'
-date: '2023-03-22' 
+date: '2023-03-22'
 author:
   name: Eirik Reksten
   picture: '/images/authors/eirik_reksten.jpg'

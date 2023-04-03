@@ -26,10 +26,7 @@ export const Navigation = ({ className, isOpen, onClose }: NavigationProps) => {
             <Link href="/membership">{'Medlemskap'}</Link>
           </li>
         </ul>
-        <CloseIcon
-          className={style.close}
-          onClick={() => onClose && onClose()}
-        />
+        <CloseIcon className={style.close} onClick={() => onClose && onClose()} />
       </div>
     </nav>
   );

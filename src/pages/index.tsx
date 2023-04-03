@@ -6,6 +6,7 @@ import { getAllPosts } from 'src/lib/api';
 import Post from 'src/interfaces/post';
 import PostPreview from 'src/components/PostPreview';
 
+import details from 'data/clubdetails.json';
 import style from 'src/styles/pages/index.module.scss';
 
 type Props = {
@@ -13,13 +14,14 @@ type Props = {
 };
 
 export default function Index({ allPosts }: Props) {
+  const title = `${details.name} | ${details.shortDescription}`;
   return (
     <Layout className={style.index}>
       <Head>
-        <title>{`Jack Army Scandinavia | Swansea City Supporterklubb`}</title>
+        <title>{title}</title>
         <meta property="og:image" content={'/images/Supporter-Flags-Jack-Army-Scandinavia.jpg'} />
-        <meta property="og:title" content={'Jack Army Scandinavia | Swansea City Supporterklubb'} />
-        <meta property="og:description" content={'Offisiell skandinavisk supporterklubb for Swansea City AFC'} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={details.description} />
         <meta property="og:type" content={'website'} />
       </Head>
       {allPosts.map((post) => (
@@ -39,14 +41,7 @@ export default function Index({ allPosts }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'author',
-    'coverImage',
-    'excerpt',
-  ]);
+  const allPosts = getAllPosts(['title', 'date', 'slug', 'author', 'coverImage', 'excerpt']);
 
   return {
     props: { allPosts },

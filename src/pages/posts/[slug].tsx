@@ -9,12 +9,15 @@ import { getPostBySlug, getAllPosts } from 'src/lib/api';
 import markdownToHtml from 'src/lib/markdownToHtml';
 import type PostType from 'src/interfaces/post';
 
+import details from 'data/clubdetails.json';
+
 type Props = {
   post: PostType;
 };
 
 export default function PostPage({ post }: Props) {
   const router = useRouter();
+  const defaultTitle = `${details.name} | ${details.shortDescription}`;
 
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
@@ -22,7 +25,7 @@ export default function PostPage({ post }: Props) {
   return (
     <Layout>
       <Head>
-        <title>{`Jack Army Scandinavia | Swansea City Supporterklubb`}</title>
+        <title>{defaultTitle}</title>
       </Head>
       {router.isFallback ? (
         <h1>Loading…</h1>

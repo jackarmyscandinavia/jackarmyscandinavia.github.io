@@ -18,18 +18,19 @@ Innlegg ligger i mappen `data/_posts` som Markdownfiler med støtte for metainfo
 
 ![Legg inn bilde](data/readme_images/addimage.png)
 
-5. Opprett en fil for innlegget under `data/posts/` kalt `[slug].md`, hvor `[slug]` er den siste delen av url'en for artikkelen. Se på filnavnene som ligger der fra før. 
+5. Opprett en fil for innlegget under `data/posts/` kalt `[slug].md`, hvor `[slug]` er den siste delen av url'en for artikkelen. Se på filnavnene som ligger der fra før.
 
 ![Opprett fil](data/readme_images/createfile.png)
 
 6. Legg til innhold i filen, formatert følgende måte. Det kan være nyttig å kikke på [Basic Syntax](https://www.markdownguide.org/basic-syntax/) eller [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/), dersom du ikke har brukt dette før. Se gjerne på noen av de andre filene i `data/posts` om du blir usikker.
+
 ```
 ---
 title: 'Her skriver du tittelen på artikkelen'
 excerpt: 'Her legger du inn utdraget til førstesiden. Du kan f.eks. kopiere inn første avsnitt.'
 coverImage: '/images/[bildet ditt]'
 embeddedYouTube: 'youtube-link for å legge inn i artikkelen. Denne linjen kan sløyfes'
-date: 'yyyy-mm-dd' 
+date: 'yyyy-mm-dd'
 author:
   name: Navnet ditt
   picture: '/images/authors/[bilde av deg]'
