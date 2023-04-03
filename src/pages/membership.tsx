@@ -53,8 +53,9 @@ export default function MembershipPage() {
         <h5>Aktivt medlemskap</h5>
         <p>
           Som aktivt medlem får du tilgang til alle våre fordeler, inkludert stemmerett ved årsmøtet, mulighet til å
-          delta i supportercupen og ikke minst å bidra til vår videre drift (som utgifter til nettside, e-post, supporterunionen og andre ordninger). I tillegg kan det forekomme andre tilbud,
-          både gjennom oss, gjennom Swansea City og gjennom Supporterunionen, som kun gjelder aktivt medlemskap
+          delta i supportercupen og ikke minst å bidra til vår videre drift (som utgifter til nettside, e-post,
+          supporterunionen og andre ordninger). I tillegg kan det forekomme andre tilbud, både gjennom oss, gjennom
+          Swansea City og gjennom Supporterunionen, som kun gjelder aktivt medlemskap
         </p>
         <p>Prisen for aktivt medlemskap er pr. i dag 100 norske kroner pr. sesong.</p>
         <h5>Passivt medlemskap</h5>
@@ -63,9 +64,11 @@ export default function MembershipPage() {
           digitale kommunikasjonsplattformer. Man har ikke stemmerett ved årsmøtet og kan heller ikke delta i
           supportercupen.
         </p>
-        <h5>Innmelding
-        </h5>
-        <p>For å bli medlem, klikk knappen nedenfor (ekstern lenke åpnes) og fyll ut din informasjon. Oppgradering fra passivt til aktivt medlemskap skjer gjennom å betale via lenke i mottatt e-post.</p>
+        <h5>Innmelding</h5>
+        <p>
+          For å bli medlem, klikk knappen nedenfor (ekstern lenke åpnes) og fyll ut din informasjon. Oppgradering fra
+          passivt til aktivt medlemskap skjer gjennom å betale via lenke i mottatt e-post.
+        </p>
         <p>
           Ved å melde deg inn godtar du våre <Link href={'/statutes'}>vedtekter</Link> og (ved aktivt medlemskap){' '}
           <Link href={'/conditions'}>salgsvilkår for medlemskap</Link>
