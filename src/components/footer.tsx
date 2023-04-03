@@ -19,7 +19,7 @@ const Footer: React.FunctionComponent<FooterProps> = ({ className }: FooterProps
       </section>
       <section className={style.address}>
         <span>{details.address.first}</span>
-        <span>{!!details.address.second ? details.address.second : undefined}</span>
+        <span>{details.address.second ? details.address.second : undefined}</span>
         <span>
           {details.address.zip} {details.address.city}
         </span>
