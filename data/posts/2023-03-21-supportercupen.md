@@ -14,6 +14,6 @@ Har du en drøm om å gå på banen i Swanseadrakt og vise hva du er god for? N�
 
 Under supportercupen spiller vi 7'er i kamper som varer i ca. 20 minutter. Dagen starter med et gruppespill der man møter tre andre lag. Det er en fin variasjon av lag og vi har både gått videre og røket ut fra gruppespillet. På supportercupen er det god stemning og vi krever ikke at du har særlig store fotballferdigheter.
 
-Dersom du kunne tenke deg å delta på Supportercupen i år, eller bare bli med å heie, send en e-post til styret[krøllalfa]swanseacity.no eller bruk [kontaktskjemaet](https://us14.list-manage.com/contact-form?u=855c7bfd5fa0bfbf4eea47f68&form_id=4ac3559218a770988345e1b64117e50e) vårt. Merk at vi forventer at deltagere på denne cupen betaler medlemskontingent, ettersom vi må kunne dekke påmeldingsavgiften.
+Dersom du kunne tenke deg å delta på Supportercupen i år, eller bare bli med å heie, send en e-post til styret[krøllalfa]swanseacity.no eller bruk [kontaktskjemaet](https://us14.list-manage.com/contact-form?u=855c7bfd5fa0bfbf4eea47f68&form_id=4ac3559218a770988345e1b64117e50e) vårt. Du kan også sende oss en melding på Messenger. Merk at vi forventer at deltagere på denne cupen betaler medlemskontingent, ettersom vi må kunne dekke påmeldingsavgiften.
 
 Mer informasjon får du på [Supporterunionens nettsider](http://www.supporterunionen.no/index.php/13-nyheter/264-velkommen-til-supportercupen-2023).
